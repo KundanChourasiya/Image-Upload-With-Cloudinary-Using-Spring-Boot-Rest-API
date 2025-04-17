@@ -27,7 +27,7 @@ public interface ImageService {
     // getGravityAutoTransformationUrl
     public String getGravityAutoTransformationUrl(Long id);
 
-    // getGravityAutoTransformationUrl
+    // getEffectsAndFiltersTransformationUrl
     String getEffectsAndFiltersTransformationUrl(Long id);
 
 }
