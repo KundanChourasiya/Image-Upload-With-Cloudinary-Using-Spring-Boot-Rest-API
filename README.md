@@ -48,9 +48,9 @@ spring.servlet.multipart.max-file-size=5MB
 spring.servlet.multipart.max-request-size=5MB
 
 # Cloudinary Credential Details Configuration
-cloudinary.cloud.name=*********
-cloudinary.api.key=*********
-cloudinary.api.secret=*********
+cloudinary.cloud.name=*** your cloud name ******
+cloudinary.api.key=***** your api key ****
+cloudinary.api.secret=**** your secret access key *****
 ```
 
 ## API Root Endpoint
@@ -133,9 +133,9 @@ spring.servlet.multipart.max-file-size=5MB
 spring.servlet.multipart.max-request-size=5MB
 
 # Cloudinary Credential Details Configuration
-cloudinary.cloud.name=*********
-cloudinary.api.key=*********
-cloudinary.api.secret=*********
+cloudinary.cloud.name=*** your cloud name ******
+cloudinary.api.key=***** your api key ****
+cloudinary.api.secret=**** your secret access key *****
 ```
 
 ## Create cloudinaryConfig class for verify cloudinary client Credentials.
