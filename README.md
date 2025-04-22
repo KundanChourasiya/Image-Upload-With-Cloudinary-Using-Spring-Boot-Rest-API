@@ -34,7 +34,7 @@
 Before running the API server, you should update the database config inside the application.properties file.
 Update the port number, username and password as per your local database config and storage file path configuration.
     
-```
+```properties
 # MySql Configuration
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/cloudinarydb
@@ -87,7 +87,7 @@ user this data for checking purpose.
 > 7. Create GlobalException class to handle all runtime exception.
 
 ## Important Dependency to be used
-```
+```xml
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -119,7 +119,7 @@ user this data for checking purpose.
 ```
 
 ## configure Mysql configuration and Cloudinary accesskey, secret key,Cloud name in applcation.properties file.
-```
+```properties
 # MySql Configuration
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/cloudinarydb
@@ -139,7 +139,7 @@ cloudinary.api.secret=**** your secret access key *****
 ```
 
 ## Create cloudinaryConfig class for verify cloudinary client Credentials.
-```
+```java
 @Configuration
 public class CloudinaryConfig {
 
@@ -173,7 +173,7 @@ public class CloudinaryConfig {
 ## Create Image service class to write Business logic to Upload image in Cloudinary Cloud and Transformation the image.
 
 ### *ImageService*
-```
+```java
 public interface ImageService {
 
     // upload image
@@ -204,7 +204,7 @@ public interface ImageService {
 ```
 
 ### *ImageServiceImpl*
-```
+```java
 @Service
 public class ImageServiceImpl implements ImageService {
 
@@ -357,7 +357,7 @@ public class ImageServiceImpl implements ImageService {
 
 ### Create Image Controller to use upload file and Transformation the image. 
 
-```
+```java
 @RestController
 @RequestMapping("/api/image")
 public class ImageController {
